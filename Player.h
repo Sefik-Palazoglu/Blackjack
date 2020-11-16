@@ -8,8 +8,8 @@
 class Player
 {
 public:
-	static constexpr int maximumScore{ 101 };
-	static constexpr int dealerMinScore{ 97 };
+	static constexpr int maximumScore{ 21 };
+	static constexpr int dealerMinScore{ 17 }; // 
 
 private:
 	int m_score{};
