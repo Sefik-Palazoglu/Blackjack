@@ -2,27 +2,27 @@
 #define DECK_H
 
 #include <vector>
+
 #include "Card.h"
 
-class Deck
-{
-public:
-	static constexpr int singleDeckSize{ 52 };
-	using array_type = std::vector<Card>;
-	using index_type = array_type::size_type;
 
-private:
-	array_type m_deck{};
-	index_type m_cardIndex{0};
+class Deck {
+ public:
+  static constexpr int singleDeckSize{ 52 };
+  using array_type = std::vector<Card>;
+  using index_type = array_type::size_type;
 
-public:
-	Deck(int deckNumber = 1);
+ private:
+  array_type m_deck{};
+  index_type m_cardIndex{ 0 };
 
-	void print() const;
+ public:
+  Deck(int deckNumber = 1);
 
-	void shuffle();
+  void print() const;
 
-	const Card& dealCard();
+  void shuffle();
+
+  const Card& dealCard();
 };
-#endif // !DECK_H
-
+#endif  // !DECK_H

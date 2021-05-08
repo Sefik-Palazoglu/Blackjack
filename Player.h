@@ -2,33 +2,34 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include <vector>
 #include "Deck.h"
+#include <vector>
 
-class Player
-{
+
+class Player {
 public:
-	static constexpr int maximumScore{ 21 };
-	static constexpr int dealerMinScore{ 17 }; // 
+  // Max score before bust is 21
+  static constexpr int maximumScore{21};
+  // Dealer's minimum score is 17
+  static constexpr int dealerMinScore{17};
 
 private:
-	int m_score{};
-	int m_numofAces{};
-	std::vector<Card> m_hand{};
-	
+  int m_score{}; // Score of player
+  int m_numofAces{};
+  std::vector<Card> m_hand{};
+
 public:
-	Player();
+  Player();
 
-	void drawCard(Deck& deck);
+  void drawCard(Deck &deck);
 
-	int score() const;
+  int score() const;
 
-	bool isBust();
+  bool isBust();
 
-	bool wantsHit() const;
+  bool wantsHit() const;
 
-	void printSituation();
+  void printSituation();
 };
 
 #endif // !PLAYER_H
-

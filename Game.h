@@ -5,34 +5,26 @@
 #include "Deck.h"
 #include "Player.h"
 
-class Game
-{
-public:
-	enum class Result
-	{
-		PLAYER_WIN,
-		DEALER_BUST,
-		DEALER_WIN,
-		PLAYER_BUST,
-		TIE
-	};
+class Game {
+ public:
+  enum class Result { PLAYER_WIN, DEALER_BUST, DEALER_WIN, PLAYER_BUST, TIE };
 
-private:
-	int m_deckNumber{};
-	Deck m_deck{};
-	Player m_player{};
-	Player m_dealer{};
+ private:
+  int m_deckNumber{};
+  Deck m_deck{};
+  Player m_player{};
+  Player m_dealer{};
 
-public:
-	Game(int deckNumber, Player& player, Player& dealer);
+ public:
+  Game(int deckNumber, Player& player, Player& dealer);
 
-	void playAndConcludeBlackjack();
+  void playAndConcludeBlackjack();
 
-	Result playBlackjack();
+  Result playBlackjack();
 
-	bool playerTurn();
+  bool playerTurn();
 
-	bool dealerTurn();
+  bool dealerTurn();
 };
 
-#endif // !GAME_H
+#endif  // !GAME_H
