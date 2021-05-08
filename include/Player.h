@@ -5,6 +5,7 @@
 #include <vector>
 
 #include "Deck.h"
+#include "Card.h"
 
 class Player {
  public:
