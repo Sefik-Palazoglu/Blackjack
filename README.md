@@ -13,4 +13,17 @@ If you are on Linux and have g++, make, and ar utilities installed on your syste
 2. Navigate in the repo and type `make` in your CLI.
 3. If you didn't receive any errors (hopefully) type `./blackjack.exe` and start playing!
 
-###
+### Rules
+- If the player is dealt an Ace and a ten-value card (called a "blackjack" or "natural"), and the dealer does not, the player wins and usually receives a bonus. (Not implemented yet)
+- If the player exceeds a sum of 21 ("busts"), the player loses, even if the dealer also exceeds 21.
+- If the dealer exceeds 21 ("busts") and the player does not, the player wins.
+- If the player attains a final sum higher than the dealer and does not bust, the player wins.
+- If both dealer and player receive a blackjack or any other hands with the same sum, this will be called a "tie" and no one wins.
+You can checkout [here](https://en.wikipedia.org/wiki/Blackjack) for additional information.
+
+### Gameflow
+- Dealer asks you how many decks should be shuffled together.
+  - Enter the number 2 to play with 104 cards or 3 to play with 156 cards.
+- After that, in every turn you have two options: (h)it or (s)tand.
+  - hit to draw another card and risk going bust!
+  - stand if you are comfortable with your score.
