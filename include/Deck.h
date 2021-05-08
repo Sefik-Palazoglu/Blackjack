@@ -5,7 +5,6 @@
 
 #include "Card.h"
 
-
 class Deck {
  public:
   static constexpr int singleDeckSize{ 52 };
