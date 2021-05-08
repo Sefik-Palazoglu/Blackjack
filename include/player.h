@@ -4,8 +4,8 @@
 
 #include <vector>
 
-#include "Deck.h"
-#include "Card.h"
+#include "deck.h"
+#include "card.h"
 
 class Player {
  public:

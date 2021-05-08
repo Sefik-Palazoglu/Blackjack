@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#include "Card.h"
+#include "card.h"
 
 class Deck {
  public:

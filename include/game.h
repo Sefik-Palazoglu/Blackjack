@@ -2,8 +2,8 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "Deck.h"
-#include "Player.h"
+#include "deck.h"
+#include "player.h"
 
 class Game {
  public:
