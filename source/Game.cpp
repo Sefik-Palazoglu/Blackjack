@@ -83,6 +83,6 @@ bool Game::dealerTurn() {
     m_dealer.drawCard(m_deck);
   }
 
-  return m_dealer
-      .isBust();  // return true if dealer went bust; otherwise, false.
+  // return true if dealer went bust; otherwise, false.
+  return m_dealer.isBust();
 }
