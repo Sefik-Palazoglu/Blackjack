@@ -1,5 +1,5 @@
 
-#include "Deck.h"
+#include "deck.h"
 
 #include <algorithm>
 #include <cassert>

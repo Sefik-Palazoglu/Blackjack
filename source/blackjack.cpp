@@ -1,9 +1,9 @@
 ﻿#include <iostream>
 
-#include "Card.h"
-#include "Deck.h"
-#include "Game.h"
-#include "Player.h"
+#include "card.h"
+#include "deck.h"
+#include "game.h"
+#include "player.h"
 
 int getDeckNumber() {
   // Loop until user enters a valid input
