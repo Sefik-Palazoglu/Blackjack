@@ -19,6 +19,7 @@ If you are on Linux and have g++, make, and ar utilities installed on your syste
 - If the dealer exceeds 21 ("busts") and the player does not, the player wins.
 - If the player attains a final sum higher than the dealer and does not bust, the player wins.
 - If both dealer and player receive a blackjack or any other hands with the same sum, this will be called a "tie" and no one wins.
+
 You can checkout [here](https://en.wikipedia.org/wiki/Blackjack) for additional information.
 
 ### Gameflow
